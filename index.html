@@ -11,6 +11,12 @@
 			display: block;
 			margin: auto;
 		}
+		body{
+			background-color: rgba(32, 132, 129, 0.377);
+		}
+		label{
+			background-color: azure;
+		}
 	</style>
 	<script>
 		function validateForm() {
@@ -18,6 +24,9 @@
 			var password = document.forms["loginForm"]["password"].value;
 
 			if (userId == "akshith" && password == "billa") {
+				window.location.href = "page1.html";
+				return false;
+			}else if (userId == "sam" && password == "cool") {
 				window.location.href = "page1.html";
 				return false;
 			} else {
@@ -36,7 +45,7 @@
 	<br><br>
 	
 
-	<h1 align="center">Login Page</h1>
+	<h1 align="center"><span style="color:rebeccapurple">LOGIN</span><img src="code.png" style="height: 42px;width: 42px;"></h1>
 	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Progressive_enhancement_web_design_pyramid_%28HTML%2C_CSS%2C_JS%29.svg/640px-Progressive_enhancement_web_design_pyramid_%28HTML%2C_CSS%2C_JS%29.svg.png" class="center" width="200px" height="190px">
 	<br><br>
 	<form name="loginForm" onsubmit="return validateForm()" align="center">
